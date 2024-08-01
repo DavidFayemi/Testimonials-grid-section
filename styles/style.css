@@ -1,0 +1,124 @@
+body {
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, minmax(200px, auto));
+  padding: 5rem;
+  gap: 1.5rem;
+  margin: 0 auto;
+  /* height: 95vh; */
+}
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3rem;
+  box-shadow: 12px 12px 48px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.grid-item.one {
+  background-color: hsl(263, 55%, 52%);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-image: url("./../assets/images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 1%;
+}
+.grid-item.two {
+  background-color: hsl(217, 19%, 35%);
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.grid-item.three {
+  background-color: hsl(0, 0%, 100%);
+  color: #111;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+}
+.grid-item.four {
+  background-color: hsl(219, 29%, 14%);
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.grid-item.five {
+  background-color: hsl(0, 0%, 100%);
+  grid-column-start: 4;
+  /* grid-column-end: 3; */
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.grid-item .user-details {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  margin-bottom: 14px;
+}
+.user-details .user-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0;
+}
+.user-image img {
+  border: 1px solid #ffffffa8;
+  padding: 1px;
+  width: 60%;
+  border-radius: 50%;
+}
+.user-details .user-text {
+  color: #fff;
+}
+.user-text .user-name {
+  /* font-size: 1em; */
+  margin-bottom: 0.3em;
+}
+.user-text .user-description {
+  color: rgba(255, 255, 255, 0.5);
+}
+.grid-item .review-title {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 14px;
+}
+.grid-item .review-paragraph {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.grid-item.three *,
+.grid-item.five * {
+  color: rgba(0, 0, 0, 1);
+}
+.grid-item.three .user-description,
+.grid-item.five .user-description {
+  color: rgba(0, 0, 0, 0.5);
+}
+.grid-item.three .review-paragraph,
+.grid-item.five .review-paragraph {
+  color: rgba(0, 0, 0, 0.7);
+}
+.grid-item.four .user-image img {
+  border: 1px solid hsla(263, 55%, 52%, 0.7);
+}
+.attribution{
+    position: relative;
+    bottom: 10px;
+    backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-bottom: -1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6px;
+    padding: 12px;
+}

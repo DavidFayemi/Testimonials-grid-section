@@ -1,0 +1,29 @@
+/* FONTS */
+
+/* Normal */
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: url("./../assets/fonts/BarlowSemiCondensed-Regular.ttf");
+  font-weight: 400;
+}
+/* Medium */
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: url("./../assets/fonts/BarlowSemiCondensed-Medium.ttf");
+  font-weight: 500;
+}
+/* Semibold */
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: url("./../assets/fonts/BarlowSemiCondensed-SemiBold.ttf");
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Barlow Semi Condensed";
+  margin: 0;
+  padding: 0;
+}
